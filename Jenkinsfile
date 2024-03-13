@@ -1,7 +1,12 @@
 node {
-
-  Stages{("Estágio")
-    echo ArgoCD      
+  agent any
+  stages{("Estágio")
+      stage('Build') { 
+            steps {
+                //
+                echo 'ArgoCD'
+            }
+        }      
   }
   
 }
