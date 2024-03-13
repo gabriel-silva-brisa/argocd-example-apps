@@ -1,5 +1,5 @@
 node {
-  agent any
+  agent Any
   stages{
       stage('Build') { 
             steps {
