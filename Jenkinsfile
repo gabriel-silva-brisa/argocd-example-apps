@@ -1,6 +1,6 @@
 node {
   agent any
-  stages{("Estágio")
+  stages{
       stage('Build') { 
             steps {
                 //
