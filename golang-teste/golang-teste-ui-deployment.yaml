@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: golang-teste
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: golang-teste
+  template:
+    metadata:
+      labels:
+        app: golang-teste
+    spec:
+      containers:
+      - image: docker.io/gabrielsilvabrisa/0golangcode
+        name: golang-teste
+        ports:
+        - containerPort: 80
